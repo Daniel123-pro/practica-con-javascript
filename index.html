@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+	  <link rel="stylesheet" type="text/css" href="styles/estilizador.css">
+	  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	  <title>clase de js</title>
+	  <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/e1406645e1.js" crossorigin="anonymous"></script>
+
+ </head>
+
+ <body>
+
+    <h1 class = "present">DOM</h1>
+
+    <div class="contenedor">
+
+      <div id="1c" class="cuadrado">
+
+       <h2 ><br><br>Reloj</h2>
+       <br>
+       <h2 class="tiempo ocultar"></h2>
+       <br>
+       <div class="operador">
+
+         <button class="on">Mostrar hora</button>
+         <button class="off">Ocultar hora</button>
+         <button class="sound_on">Sonar alarma</button>
+         <button class="sound_off">Pausar alarma</button>
+
+       </div>
+
+      </div>
+
+      <div id="2c" class="manejador cuadrado">
+       <h2 ><br><br>Manejador</h2>
+
+       <div class="caja">
+
+         <div class="player_1"></div>
+
+       </div>
+
+      </div>
+
+      <div id="3c" class="cuadrado">
+
+       <h2 ><br><br>Cuenta regresiva</h2>
+       <br>
+       <h2 class="contador"><b class="dias"></b> Dias <b class="horas"></b> horas <b class="minutos"></b> minutos <b class="segundos"></b> segundos</h2>
+
+       <h2 class="sorpresa"></h2>
+      </div>
+
+      <div id="4c" class="cuadrado">
+       <h2 ><br><br>User agent</h2>
+       <br>
+       <h2 class="version"></h2>
+       <h2 class="mensaje"></h2>
+       <br>
+       <br>
+
+      </div>
+
+      <div id="5c" class="cuadrado">
+        <h2 ><br><br>Testeo responsive</h2>
+        <br>
+        <form name="formulario" class="formu">
+
+          <b>URL de la pagina </b><div><input type="url" name="direccion"></div>
+          <b>Ancho </b><div><input type="number" name="ancho"></div>
+          <b>alto </b><div><input type="number" name="alto"></div>
+          <div><input type="submit" name="Probar"></div>
+          
+        </form>
+      </div>
+
+      <div id="6c" class="cuadrado">
+        <h2 ><br><br>Reconocimiento de una webcam</h2>
+        <br>
+        <video src="" id="webcam"></video>
+        <div class="errorr"></div>
+      </div>
+
+      <div id="7c" class="cuadrado">
+        <h2><br><br>Geolocalizacion</h2>
+
+        <div class="coordenadas">
+          <div class="longitud">
+            
+          </div>
+
+          <div class="latitud">
+            
+          </div>
+
+          <a href="" class="mapa" target="_blank"></a>
+        </div>
+
+      </div>
+
+      <div id="8c" class="cuadrado" >
+        <h2><br><br>Buscador</h2>
+
+        <input type="text" name="Buscador" placeholder="Buscar" class="barrita">
+          
+          <div class="elementos">
+
+            <div id="mapache" class="">
+              <img src="assets/Mapache.png">
+              <h3>Mapache</h3>
+            </div>
+            <div id="lava_golem" class="">
+              <img src="assets/Golem de lava.png">
+              <h3>Lava golem</h3>
+            </div>
+            <div id="piraña" class="">
+              <img src="assets/piraña.png">
+              <h3>Piraña</h3>
+            </div>
+            <div id="titanosaurio_de_lava" class="">
+              <img src="assets/Titanosaurio de lava.png">
+              <h3>Titanosaurio de lava</h3>
+            </div>
+            <div id="libelula_alas_de_cristal" class="">
+              <img src="assets/Libelula alas de cristal.png">
+              <h3>Libelula alas de cristal</h3>
+            </div>
+            <div id="fortuna" class="">
+              <img src="assets/Fortuna.png">
+              <h3>Fortuna</h3>
+            </div>
+            <div id="guardian_destrozado" class="">
+              <img src="assets/Guardian destrozado.png">
+              <h3>Guardian destrozado</h3>
+            </div>
+            <div id="venus_atrapa_gente" class="">
+              <img src="assets/Venus atrapa gente.png">
+              <h3>Venus atrapa gente</h3>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="9c" class="cuadrado">
+          <h2><br><br>Sorteo</h2>
+          <ul class="lista">
+            <li class="participante">Daniel</li>
+            <li class="participante">Alfonso</li>
+            <li class="participante">Jesica</li>
+            <li class="participante">Lucas</li>
+            <li class="participante">Cristina</li>
+            <li class="participante">Alex</li>
+            <li class="participante">Lucia</li>
+            <li class="participante">Maria</li>
+          </ul>
+          <button class="sortear">Sortear</button>
+        </div>
+
+        <div id="10c" class="cuadrado" >
+          <h2><br><br>Lista de imagenes</h2>
+
+
+
+          <div class="gallery">
+
+            <button class="izquierda diseño"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="coleccion">
+
+              <div class="colec">
+
+              <img src="assets/march.jpg" class="desocultar" id="0">
+              <img src="assets/paisaje.jpg" class="" id="1">
+              <img src="assets/ciudad.jpg" class="" id="2">
+              <img src="assets/astro.jpg" class="" id="3">
+
+            </div>
+              
+            </div>
+
+            <button class="derecha diseño"><i class="fas fa-chevron-right"></i></button>
+
+          </div>
+        </div>
+
+        <div id="11c" class="cuadrado">
+          <h2><br><br>Video inteligente</h2>
+          <video src="assets/Nintendo 3DS - The Legend of Zelda- Majora’s Mask 3D - Announcement Trailer_HD.mp4" class="majorask"></video>
+        </div>
+
+        <div id="12c" class="cuadrado">
+          <h2><br><br>Validacion de formulario</h2>
+          <form class="validador">
+            <input type="text"  placeholder="Nombre" class="vali1" required="true">
+            <input type="email"  placeholder="E-mail" class="vali2" required="true">
+            <input type="password"  placeholder="Contraseña" class="vali3" required="true">
+            <textarea class="vali4"></textarea>
+            <input type="submit" class="permiso" disabled="true">
+          </form>
+        </div>
+     
+ 
+    </div>
+
+    <button class="menu"><i class="fas fa-ellipsis-v"></i></button>
+
+    <a class="flecha invisible" href="#1c"><i class="fas fa-arrow-alt-circle-up"></i></a>
+
+    <button class="tema"><i class="fas fa-moon"></i></button>
+
+    <div class="conectado">Has recuperado la conexion</div>
+    <div class="desconectado">Has perdido la conexion</div>
+
+    <nav class="contenedor_2">
+      <a href="#1c" class="links">Reloj</a>
+      <a href="#2c" class="links">Manejador</a>
+      <a href="#3c" class="links">Cuenta regresiva</a>
+      <a href="#4c" class="links">User agent</a>
+      <a href="#5c" class="links">Testeo responsive</a>
+      <a href="#6c" class="links">reconnocer webcam</a>
+      <a href="#7c" class="links">Geolocalizacion</a>
+      <a href="#8c" class="links">Buscador</a>
+      <a href="#9c" class="links">Sorteo</a>
+      <a href="#10c" class="links">Lista de imagenes</a>
+      <a href="#11c" class="links">Video inteligente</a>
+      <a href="#12c" class="links">Validacion de formulario</a>
+    </nav>
+
+  <script src = "scripts/codigo_general.js"></script>
+ </body>
+
+</html>

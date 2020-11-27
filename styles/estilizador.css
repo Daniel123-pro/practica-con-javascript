@@ -1,0 +1,520 @@
+* {
+  scroll-behavior: smooth;
+  font-family: 'Josefin Sans', sans-serif;
+  z-index: 5;
+}
+
+body {
+  background: rgb(255, 255, 231)
+}
+
+.present {
+  background-color: yellow;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-bottom: 5px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  color: black;
+}
+
+.menu{
+  position: fixed;
+  display: inline;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  outline:none;
+  border:none;
+  background-color: yellow;
+  border-radius: 50px 50px 50px 50px;
+  transition: background-color , color 0.3s;
+  z-index: 10;
+  cursor:pointer;
+}
+
+.tema {
+  position: fixed;
+  display: inline;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  outline:none;
+  border:none;
+  background-color: yellow;
+  border-radius: 50px 50px 50px 50px;
+  transition: all 0.3s;
+  z-index: 10;
+  cursor:pointer;
+  font-size: 20px;
+}
+
+.tema:hover{
+  background: gray;
+  color: yellow;
+}
+
+.tema:active {
+  background: yellow;
+  color: gray;
+}
+
+.flecha {
+  outline: none;
+  border:none;
+  display: inline;
+  background-color: yellow;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  position: fixed;
+  transition: all 0.3s;
+  border-radius: 50px 50px 50px 50px;
+  font-size: 30px;
+  z-index: 10;
+  bottom:  0;
+  right: 70px;
+  text-align: center;
+  padding: 15px;
+}
+
+.flecha i {
+  color: black;
+  transition:color 0.3s;
+}
+
+.flecha:active > i {
+  color: gray;
+}
+
+.flecha:active {
+  background-color: rgb(255, 255, 60);
+}
+
+
+.ocultar{
+  display: none;
+}
+
+.emo {
+  background: #3B3736;
+  color: yellow;
+}
+
+
+.invisible {
+  opacity: 0;
+  z-index: 2;
+}
+
+.operador{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.operador button {
+  flex-grow: 1;
+  margin: 0 10px;
+  outline: none;
+  border:none;
+  background-color: yellow;
+  border-radius: 10px 10px 10px 10px;
+  border:5px solid black;
+  padding:3px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+button:active {
+   color:gray;
+}
+
+.contenedor {
+  display: inline-flex;
+  width: 100%;
+  height: 10000px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor .cuadrado{
+  flex-grow: 1;
+  font-size: 20px;
+  margin:30px;
+}
+
+.contenedor_2 {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  justify-items:center;
+  background-color: black;
+  opacity: 0.7;
+  width: 90vw;
+  height: 100%;
+  top: 0;
+  flex-direction: column;
+  padding: 40px;
+  right: 150vw;
+  transition: right 0.3s;
+  z-index: 20;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.mostrar {
+  right: 10vw;
+}
+
+.contenedor_2 a {
+  background-color: black;
+  color: yellow;
+  width: 100%;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  padding:10px 0;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color,color 0.3s;
+  text-decoration: none;
+  flex-grow: 1;
+
+}
+
+
+.contenedor_2 a:hover{
+  background-color: yellow;
+  color: black;
+}
+
+.menu:active {
+  background-color: rgb(255, 255, 60);
+
+}
+
+.manejador {
+  padding: 20px;
+
+}
+
+.caja {
+
+  display: inline-flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+.caja .player_1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to top,green,yellow);
+  border-radius: 50px 50px 50px 50px;
+  transition: top,left 0.03s;
+}
+
+.formu {
+  display: flex;
+  background: rgb(128, 128, 128);
+  flex-direction: column;
+  width: 550px;
+  height: 550px;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  border:5px solid rgb(150, 150, 150);
+  padding:80px;
+  flex-shrink: unset;
+
+}
+
+.formu div {
+  flex-grow: 1;
+}
+
+.mensaje{
+  background: rgba(49, 1, 73, 0.718);
+}
+
+.conectado {
+  display: block;
+  position: fixed;
+  background-color: rgb(0, 255, 60);
+  color: white;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  z-index: 30;
+  text-align: center;
+  transition: bottom 0.4s;
+}
+
+.desconectado {
+  display: block;
+  position: fixed;
+  background-color: rgb(255, 0, 42);
+  color: white;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  z-index: 30;
+  text-align: center;
+  transition: bottom 0.4s;
+}
+
+.coordenadas {
+  display: flex;
+  background: gray;
+  margin: auto;
+  height: 500px;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  border:5px solid lightgray;
+}
+
+.coordenadas div {
+  flex-grow: 1;
+}
+
+.coordenadas a {
+  height: 50px;
+  background: yellow;
+  color: black;
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  text-decoration: none;
+  padding:15px;
+}
+
+.barrita {
+  position: relative;
+  outline: none;
+  border:none;
+  margin: 100px 0;
+  padding:10px;
+  border-radius: 25px 25px 25px 25px;
+  transition: border 1s , box-shadow 1s;
+  margin: 10px 0px;
+}
+
+.barrita:focus {
+  box-shadow: 0 0 5px lightblue;
+}
+
+.elementos {
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  grid-template-rows:  repeat(auto-fill,minmax(242px,1fr));
+  margin: auto;
+  height: 700px;
+  max-width: 1100px;  
+  grid-gap: 40px;
+  grid-auto-rows: 200px;
+  padding: 50px;
+  overflow-y: scroll;
+
+}
+
+.elementos div h3 {
+  background: gray;
+  height: 70px;
+  text-align: center;
+  border:5px double rgba(1, 73, 67, 1);
+  padding: 8px;
+  font-size: 20px;
+}
+
+.elementos div img {
+  
+    height: 175px;
+    width: 100%;
+    background: linear-gradient(to bottom,transparent,rgba(1, 73, 67, 1));
+    object-fit: contain;
+    margin-bottom: 0;
+    transition: object-position 0.3s;
+}
+
+.tu {
+  display: flex;
+  flex-direction: column;
+}
+
+.elementos div:hover img{
+  object-position: 2px 2px;
+}
+
+.elementos div {
+  transition: display 0.3s;
+}
+
+.sortear{
+  margin:30px;
+  transition: all 0.1s;
+}
+
+.sortear:active {
+  box-shadow: 0 0 5px lightblue;
+}
+
+.participante {
+  margin: 10px 0;
+}
+
+.diseño {
+  outline:none;
+  border:none;
+  padding: 15px;
+  border-radius: 50px 50px 50px 50px;
+  max-width: 50px;
+  max-height: 50px;
+  text-align: center;
+  transition: color 0.3s;
+  background: lightgray;
+  margin: 75px 20px;
+  flex-grow: 1;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.coleccion {
+  display: flex;
+  height: 200px;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  flex-grow: 1;
+  
+}
+
+.coleccion .colec {
+  position: relative;
+  height: 200px;
+  width: 400px;
+
+}
+
+.coleccion .colec img {
+  flex-grow: 1;
+  height: 200px;
+  width: 400px;
+  top: 0;
+  left: 0%;
+  position: absolute;
+  object-fit: cover;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.desocultar{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.iluminado {
+  background: yellow !important;
+  color: black !important;
+}
+
+.majorask {
+  width: 50%;
+  height: 400px;
+}
+
+.validador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.validador input {
+  border-radius: 6px 6px 6px 6px;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 7px;
+  width: 500px;
+  transition: all 0.3s;
+}
+
+.validador textarea {
+   resize: none;
+   border-radius: 6px 6px 6px 6px;
+   outline: none;
+   padding: 5px;
+   margin-bottom: 7px;
+   width: 500px;
+   transition: all 0.3s;
+}
+
+.valido {
+  border-color: lightgreen;
+  background: rgb(231, 255, 255);
+}
+
+.no_valido {
+  border-color: rgb(255, 0, 48);
+  background: rgb(255, 231, 255);
+}
+
+.permiso {
+  max-width: 200px;
+}
+
+@media screen and (min-width: 1200px){
+    .contenedor_2  {
+       
+       opacity: 1;
+       width: 20%;
+       height: 90vh;
+       right: 0;
+       top: 61px;
+       padding: 0;
+    }
+
+    .contenedor_2 a {
+      font-size: 20px;
+      margin: 5px 0;
+
+    }
+
+    .contenedor {
+      left: 0;
+      width: 77%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .flecha{
+      display: none;
+    }
+}
+
